@@ -1,0 +1,90 @@
+@import '@fontsource/archivo/400.css';
+@import '@fontsource/archivo/600.css';
+@import '@fontsource/archivo/700.css';
+@import '@fontsource/archivo/800.css';
+@import '@fontsource/archivo/900.css';
+
+:root {
+  --bg-color: #f1f4f8;
+  --bg-white: #ffffff;
+  --bg-light-blue: #e8ecf2;
+  --text-dark: #1e1e24;
+  --text-muted: #6b7280;
+  --primary-color: #ff6b57;
+  --border-color: #d1d5db;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-color);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Utils */
+.text-center { text-align: center; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-1 { gap: 4px; }
+.gap-2 { gap: 8px; }
+.gap-4 { gap: 16px; }
+.gap-8 { gap: 32px; }
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+.bg-white { background-color: var(--bg-white); }
+.bg-light { background-color: var(--bg-color); }
+
+/* Typography */
+h1, h2, h3, h4 { font-weight: 800; text-transform: uppercase; letter-spacing: 2px; }
+.title-large {
+  font-size: 8rem;
+  color: white;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.price {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
