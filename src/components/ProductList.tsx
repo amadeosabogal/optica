@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Heart, Navigation, ShoppingCart } from 'lucide-react';
 
 const products = [
